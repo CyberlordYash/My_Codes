@@ -1,17 +1,17 @@
 #include<stdio.h>
-#include<string.h>
-int main()
+#include<stdlib.h>
+struct node
 {
-    char a[100],b[100];int i,n,len;
-    printf("Enter string :");
-    gets(a);
-    printf("Enter n upto which sting should be copied:");
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        b[i]=a[i];
-    }
-    b[i]='\0';
-    printf("New string upto n elements is :\n %s",b);
+    int data;
+    struct node *next;
+    
+}*head;
 
-}
+
+void createnode(int n){
+    int d;
+    printf("Enter data");
+    scanf("%d",&d);
+    head->data=d;
+    head->next=NULL;
+    printf("Enter data");
